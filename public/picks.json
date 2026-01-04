@@ -1,0 +1,408 @@
+[
+  {
+    "player": "Donovan Mitchell",
+    "line": 28.5,
+    "predicted": 24.5,
+    "pick": "UNDER",
+    "confidence": 64
+  },
+  {
+    "player": "Cade Cunningham",
+    "line": 27.5,
+    "predicted": 32.0,
+    "pick": "OVER",
+    "confidence": 94
+  },
+  {
+    "player": "Darius Garland",
+    "line": 17.5,
+    "predicted": 15.41,
+    "pick": "UNDER",
+    "confidence": 69
+  },
+  {
+    "player": "Evan Mobley",
+    "line": 16,
+    "predicted": 11.01,
+    "pick": "UNDER",
+    "confidence": 77
+  },
+  {
+    "player": "De'Andre Hunter",
+    "line": 13,
+    "predicted": 11.33,
+    "pick": "UNDER",
+    "confidence": 57
+  },
+  {
+    "player": "Ausar Thompson",
+    "line": 12.5,
+    "predicted": 9.78,
+    "pick": "UNDER",
+    "confidence": 70
+  },
+  {
+    "player": "Jarrett Allen",
+    "line": 12.5,
+    "predicted": 13.1,
+    "pick": "OVER",
+    "confidence": 53
+  },
+  {
+    "player": "Isaiah Stewart",
+    "line": 12,
+    "predicted": 8.36,
+    "pick": "UNDER",
+    "confidence": 75
+  },
+  {
+    "player": "Duncan Robinson",
+    "line": 11.5,
+    "predicted": 7.53,
+    "pick": "UNDER",
+    "confidence": 87
+  },
+  {
+    "player": "Jaden Ivey",
+    "line": 10.5,
+    "predicted": 8.08,
+    "pick": "UNDER",
+    "confidence": 74
+  },
+  {
+    "player": "Paul Reed",
+    "line": 7.5,
+    "predicted": 6.09,
+    "pick": "UNDER",
+    "confidence": 65
+  },
+  {
+    "player": "Dean Wade",
+    "line": 5.5,
+    "predicted": 8.78,
+    "pick": "OVER",
+    "confidence": 89
+  },
+  {
+    "player": "Paolo Banchero",
+    "line": 26.5,
+    "predicted": 17.18,
+    "pick": "UNDER",
+    "confidence": 88
+  },
+  {
+    "player": "Pascal Siakam",
+    "line": 24.5,
+    "predicted": 18.43,
+    "pick": "UNDER",
+    "confidence": 76
+  },
+  {
+    "player": "Desmond Bane",
+    "line": 21,
+    "predicted": 17.3,
+    "pick": "UNDER",
+    "confidence": 84
+  },
+  {
+    "player": "Anthony Black",
+    "line": 18.5,
+    "predicted": 18.08,
+    "pick": "UNDER",
+    "confidence": 52
+  },
+  {
+    "player": "Andrew Nembhard",
+    "line": 18,
+    "predicted": 17.88,
+    "pick": "UNDER",
+    "confidence": 52
+  },
+  {
+    "player": "Aaron Nesmith",
+    "line": 13.5,
+    "predicted": 13.85,
+    "pick": "OVER",
+    "confidence": 54
+  },
+  {
+    "player": "T.J. McConnell",
+    "line": 9.5,
+    "predicted": 10.33,
+    "pick": "OVER",
+    "confidence": 56
+  },
+  {
+    "player": "Jay Huff",
+    "line": 8.5,
+    "predicted": 7.22,
+    "pick": "UNDER",
+    "confidence": 62
+  },
+  {
+    "player": "Tyus Jones",
+    "line": 6.5,
+    "predicted": 4.42,
+    "pick": "UNDER",
+    "confidence": 68
+  },
+  {
+    "player": "Ben Sheppard",
+    "line": 6.5,
+    "predicted": 5.54,
+    "pick": "UNDER",
+    "confidence": 57
+  },
+  {
+    "player": "Jamal Murray",
+    "line": 27.5,
+    "predicted": 34.13,
+    "pick": "OVER",
+    "confidence": 84
+  },
+  {
+    "player": "Cam Thomas",
+    "line": 18.5,
+    "predicted": 17.87,
+    "pick": "UNDER",
+    "confidence": 52
+  },
+  {
+    "player": "Peyton Watson",
+    "line": 14.5,
+    "predicted": 14.82,
+    "pick": "OVER",
+    "confidence": 52
+  },
+  {
+    "player": "Aaron Gordon",
+    "line": 13.5,
+    "predicted": 12.69,
+    "pick": "UNDER",
+    "confidence": 54
+  },
+  {
+    "player": "Christian Braun",
+    "line": 11.5,
+    "predicted": 10.41,
+    "pick": "UNDER",
+    "confidence": 66
+  },
+  {
+    "player": "Noah Clowney",
+    "line": 11,
+    "predicted": 10.48,
+    "pick": "UNDER",
+    "confidence": 61
+  },
+  {
+    "player": "Egor D\u00ebmin",
+    "line": 10.5,
+    "predicted": 13.43,
+    "pick": "OVER",
+    "confidence": 67
+  },
+  {
+    "player": "Terance Mann",
+    "line": 6.5,
+    "predicted": 3.51,
+    "pick": "UNDER",
+    "confidence": 100
+  },
+  {
+    "player": "Shai Gilgeous-Alexander",
+    "line": 30,
+    "predicted": 36.04,
+    "pick": "OVER",
+    "confidence": 83
+  },
+  {
+    "player": "Devin Booker",
+    "line": 23.5,
+    "predicted": 31.38,
+    "pick": "OVER",
+    "confidence": 92
+  },
+  {
+    "player": "Dillon Brooks",
+    "line": 18.5,
+    "predicted": 23.01,
+    "pick": "OVER",
+    "confidence": 82
+  },
+  {
+    "player": "Chet Holmgren",
+    "line": 17.5,
+    "predicted": 15.22,
+    "pick": "UNDER",
+    "confidence": 59
+  },
+  {
+    "player": "Jalen Williams",
+    "line": 16.5,
+    "predicted": 16.33,
+    "pick": "UNDER",
+    "confidence": 52
+  },
+  {
+    "player": "Collin Gillespie",
+    "line": 14,
+    "predicted": 20.09,
+    "pick": "OVER",
+    "confidence": 94
+  },
+  {
+    "player": "Grayson Allen",
+    "line": 11.5,
+    "predicted": 11.42,
+    "pick": "UNDER",
+    "confidence": 52
+  },
+  {
+    "player": "Ajay Mitchell",
+    "line": 11.5,
+    "predicted": 12.57,
+    "pick": "OVER",
+    "confidence": 64
+  },
+  {
+    "player": "Mark Williams",
+    "line": 10.5,
+    "predicted": 13.17,
+    "pick": "OVER",
+    "confidence": 61
+  },
+  {
+    "player": "Aaron Wiggins",
+    "line": 9.5,
+    "predicted": 5.46,
+    "pick": "UNDER",
+    "confidence": 77
+  },
+  {
+    "player": "Royce O'Neale",
+    "line": 8,
+    "predicted": 10.37,
+    "pick": "OVER",
+    "confidence": 68
+  },
+  {
+    "player": "Cason Wallace",
+    "line": 6.5,
+    "predicted": 9.58,
+    "pick": "OVER",
+    "confidence": 72
+  },
+  {
+    "player": "Luguentz Dort",
+    "line": 6.5,
+    "predicted": 8.69,
+    "pick": "OVER",
+    "confidence": 68
+  },
+  {
+    "player": "Giannis Antetokounmpo",
+    "line": 29,
+    "predicted": 8.43,
+    "pick": "UNDER",
+    "confidence": 96
+  },
+  {
+    "player": "DeMar DeRozan",
+    "line": 19.5,
+    "predicted": 18.64,
+    "pick": "UNDER",
+    "confidence": 53
+  },
+  {
+    "player": "Zach LaVine",
+    "line": 16.5,
+    "predicted": 12.74,
+    "pick": "UNDER",
+    "confidence": 60
+  },
+  {
+    "player": "Keegan Murray",
+    "line": 15.5,
+    "predicted": 7.87,
+    "pick": "UNDER",
+    "confidence": 80
+  },
+  {
+    "player": "Ryan Rollins",
+    "line": 15.5,
+    "predicted": 17.27,
+    "pick": "OVER",
+    "confidence": 67
+  },
+  {
+    "player": "Russell Westbrook",
+    "line": 14.5,
+    "predicted": 15.63,
+    "pick": "OVER",
+    "confidence": 56
+  },
+  {
+    "player": "Bobby Portis",
+    "line": 13,
+    "predicted": 20.22,
+    "pick": "OVER",
+    "confidence": 93
+  },
+  {
+    "player": "Myles Turner",
+    "line": 11.5,
+    "predicted": 14.48,
+    "pick": "OVER",
+    "confidence": 70
+  },
+  {
+    "player": "Kyle Kuzma",
+    "line": 10.5,
+    "predicted": 13.06,
+    "pick": "OVER",
+    "confidence": 68
+  },
+  {
+    "player": "AJ Green",
+    "line": 9.5,
+    "predicted": 12.0,
+    "pick": "OVER",
+    "confidence": 66
+  },
+  {
+    "player": "Luka Don\u010di\u0107",
+    "line": 34.5,
+    "predicted": 38.42,
+    "pick": "OVER",
+    "confidence": 63
+  },
+  {
+    "player": "LeBron James",
+    "line": 22.5,
+    "predicted": 25.44,
+    "pick": "OVER",
+    "confidence": 65
+  },
+  {
+    "player": "Deandre Ayton",
+    "line": 13.5,
+    "predicted": 12.83,
+    "pick": "UNDER",
+    "confidence": 56
+  },
+  {
+    "player": "Jake LaRavia",
+    "line": 12.5,
+    "predicted": 7.88,
+    "pick": "UNDER",
+    "confidence": 94
+  },
+  {
+    "player": "Marcus Smart",
+    "line": 10.5,
+    "predicted": 6.86,
+    "pick": "UNDER",
+    "confidence": 77
+  }
+]
