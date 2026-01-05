@@ -2,316 +2,489 @@
   {
     "player": "Cade Cunningham",
     "line": 28.5,
-    "predicted": 27.8,
-    "pick": "UNDER",
-    "confidence": 64
+    "predicted": 29.1,
+    "pick": "OVER",
+    "confidence": 55,
+    "game_time": "2026-01-05T19:00:00.000-05:00"
   },
   {
     "player": "Jalen Brunson",
     "line": 28.5,
-    "predicted": 35.8,
+    "predicted": 29.3,
     "pick": "OVER",
-    "confidence": 98
+    "confidence": 56,
+    "game_time": "2026-01-05T19:00:00.000-05:00"
   },
   {
     "player": "Karl-Anthony Towns",
     "line": 21.5,
-    "predicted": 16.0,
+    "predicted": 15.3,
     "pick": "UNDER",
-    "confidence": 71
+    "confidence": 72,
+    "game_time": "2026-01-05T19:00:00.000-05:00"
   },
   {
     "player": "OG Anunoby",
     "line": 16.5,
-    "predicted": 17.0,
-    "pick": "OVER",
-    "confidence": 54
+    "predicted": 16.3,
+    "pick": "UNDER",
+    "confidence": 51,
+    "game_time": "2026-01-05T19:00:00.000-05:00"
   },
   {
     "player": "Mikal Bridges",
     "line": 15.5,
-    "predicted": 13.0,
+    "predicted": 12.6,
     "pick": "UNDER",
-    "confidence": 71
+    "confidence": 68,
+    "game_time": "2026-01-05T19:00:00.000-05:00"
   },
   {
     "player": "Ausar Thompson",
     "line": 12.5,
-    "predicted": 8.3,
+    "predicted": 8.2,
     "pick": "UNDER",
-    "confidence": 97
+    "confidence": 80,
+    "game_time": "2026-01-05T19:00:00.000-05:00"
   },
   {
     "player": "Duncan Robinson",
     "line": 12.5,
-    "predicted": 9.4,
+    "predicted": 9.2,
     "pick": "UNDER",
-    "confidence": 79
+    "confidence": 72,
+    "game_time": "2026-01-05T19:00:00.000-05:00"
   },
   {
     "player": "Isaiah Stewart",
     "line": 11.5,
     "predicted": 8.7,
     "pick": "UNDER",
-    "confidence": 75
+    "confidence": 69,
+    "game_time": "2026-01-05T19:00:00.000-05:00"
   },
   {
     "player": "Miles McBride",
     "line": 11.5,
-    "predicted": 13.3,
+    "predicted": 12.9,
     "pick": "OVER",
-    "confidence": 60
+    "confidence": 57,
+    "game_time": "2026-01-05T19:00:00.000-05:00"
   },
   {
     "player": "Paul Reed",
     "line": 10.5,
-    "predicted": 6.2,
+    "predicted": 6.7,
     "pick": "UNDER",
-    "confidence": 87
+    "confidence": 74,
+    "game_time": "2026-01-05T19:00:00.000-05:00"
   },
   {
     "player": "Jaden Ivey",
     "line": 9.5,
-    "predicted": 7.7,
+    "predicted": 8.1,
     "pick": "UNDER",
-    "confidence": 68
+    "confidence": 61,
+    "game_time": "2026-01-05T19:00:00.000-05:00"
+  },
+  {
+    "player": "Jordan Clarkson",
+    "line": 7.5,
+    "predicted": 8.5,
+    "pick": "OVER",
+    "confidence": 55,
+    "game_time": "2026-01-05T19:00:00.000-05:00"
   },
   {
     "player": "Jaylen Brown",
-    "line": 29.5,
-    "predicted": 30.5,
+    "line": 30.5,
+    "predicted": 32.8,
     "pick": "OVER",
-    "confidence": 54
+    "confidence": 59,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "Coby White",
     "line": 19.5,
-    "predicted": 17.1,
+    "predicted": 13.1,
     "pick": "UNDER",
-    "confidence": 60
+    "confidence": 74,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "Derrick White",
     "line": 19.5,
-    "predicted": 20.9,
+    "predicted": 20.3,
     "pick": "OVER",
-    "confidence": 57
+    "confidence": 54,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "Nikola Vu\u010devi\u0107",
     "line": 17.5,
     "predicted": 19.8,
     "pick": "OVER",
-    "confidence": 67
+    "confidence": 63,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "Payton Pritchard",
     "line": 16.5,
-    "predicted": 17.0,
-    "pick": "OVER",
-    "confidence": 53
+    "predicted": 15.9,
+    "pick": "UNDER",
+    "confidence": 53,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "Matas Buzelis",
     "line": 15.5,
-    "predicted": 17.2,
-    "pick": "OVER",
-    "confidence": 63
+    "predicted": 15.5,
+    "pick": "UNDER",
+    "confidence": 50,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "Anfernee Simons",
     "line": 12.5,
-    "predicted": 14.4,
+    "predicted": 14.1,
     "pick": "OVER",
-    "confidence": 67
+    "confidence": 60,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "Kevin Huerter",
     "line": 12.5,
-    "predicted": 11.5,
+    "predicted": 12.1,
     "pick": "UNDER",
-    "confidence": 57
+    "confidence": 52,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "Neemias Queta",
     "line": 10.5,
-    "predicted": 10.6,
-    "pick": "OVER",
-    "confidence": 51
+    "predicted": 10.0,
+    "pick": "UNDER",
+    "confidence": 54,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "Isaac Okoro",
     "line": 8.5,
-    "predicted": 9.0,
+    "predicted": 10.1,
     "pick": "OVER",
-    "confidence": 52
+    "confidence": 57,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "Luka Garza",
     "line": 7.5,
-    "predicted": 11.2,
+    "predicted": 13.9,
     "pick": "OVER",
-    "confidence": 82
+    "confidence": 80,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
+  },
+  {
+    "player": "Jalen Johnson",
+    "line": 24.5,
+    "predicted": 26.0,
+    "pick": "OVER",
+    "confidence": 57,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "Brandon Ingram",
     "line": 23.5,
-    "predicted": 27.3,
+    "predicted": 29.9,
     "pick": "OVER",
-    "confidence": 76
-  },
-  {
-    "player": "Jalen Johnson",
-    "line": 23.5,
-    "predicted": 26.2,
-    "pick": "OVER",
-    "confidence": 66
+    "confidence": 80,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "Nickeil Alexander-Walker",
     "line": 20.5,
-    "predicted": 25.3,
+    "predicted": 25.4,
     "pick": "OVER",
-    "confidence": 72
+    "confidence": 71,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "Scottie Barnes",
     "line": 19.5,
-    "predicted": 16.9,
+    "predicted": 16.7,
     "pick": "UNDER",
-    "confidence": 73
+    "confidence": 68,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "RJ Barrett",
     "line": 18.5,
-    "predicted": 20.9,
+    "predicted": 18.9,
     "pick": "OVER",
-    "confidence": 64
+    "confidence": 52,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "Immanuel Quickley",
     "line": 15.5,
-    "predicted": 18.6,
+    "predicted": 18.1,
     "pick": "OVER",
-    "confidence": 63
+    "confidence": 61,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "Onyeka Okongwu",
     "line": 15.5,
-    "predicted": 19.8,
-    "pick": "OVER",
-    "confidence": 66
+    "predicted": 11.7,
+    "pick": "UNDER",
+    "confidence": 65,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "Kristaps Porzi\u0146\u0123is",
-    "line": 13.5,
-    "predicted": 22.3,
-    "pick": "OVER",
-    "confidence": 81
+    "line": 14,
+    "predicted": 11.9,
+    "pick": "UNDER",
+    "confidence": 58,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "Dyson Daniels",
     "line": 12.5,
-    "predicted": 13.8,
+    "predicted": 14.0,
     "pick": "OVER",
-    "confidence": 64
+    "confidence": 61,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "Zaccharie Risacher",
     "line": 9.5,
-    "predicted": 8.9,
+    "predicted": 9.1,
     "pick": "UNDER",
-    "confidence": 57
+    "confidence": 53,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "Sandro Mamukelashvili",
     "line": 9.5,
-    "predicted": 10.5,
+    "predicted": 10.6,
     "pick": "OVER",
-    "confidence": 57
+    "confidence": 56,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
   },
   {
     "player": "Jamal Shead",
     "line": 7.5,
-    "predicted": 8.4,
+    "predicted": 10.2,
     "pick": "OVER",
-    "confidence": 55
+    "confidence": 66,
+    "game_time": "2026-01-05T19:30:00.000-05:00"
+  },
+  {
+    "player": "Kevin Durant",
+    "line": 28.5,
+    "predicted": 25.5,
+    "pick": "UNDER",
+    "confidence": 68,
+    "game_time": "2026-01-05T20:00:00.000-05:00"
+  },
+  {
+    "player": "Tari Eason",
+    "line": 14.5,
+    "predicted": 14.6,
+    "pick": "OVER",
+    "confidence": 51,
+    "game_time": "2026-01-05T20:00:00.000-05:00"
+  },
+  {
+    "player": "Reed Sheppard",
+    "line": 12.5,
+    "predicted": 12.4,
+    "pick": "UNDER",
+    "confidence": 51,
+    "game_time": "2026-01-05T20:00:00.000-05:00"
+  },
+  {
+    "player": "Steven Adams",
+    "line": 7.5,
+    "predicted": 4.2,
+    "pick": "UNDER",
+    "confidence": 74,
+    "game_time": "2026-01-05T20:00:00.000-05:00"
+  },
+  {
+    "player": "Deni Avdija",
+    "line": 27.5,
+    "predicted": 31.0,
+    "pick": "OVER",
+    "confidence": 68,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
+  },
+  {
+    "player": "Lauri Markkanen",
+    "line": 27.5,
+    "predicted": 31.2,
+    "pick": "OVER",
+    "confidence": 71,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
+  },
+  {
+    "player": "Keyonte George",
+    "line": 24.5,
+    "predicted": 32.1,
+    "pick": "OVER",
+    "confidence": 80,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
+  },
+  {
+    "player": "Shaedon Sharpe",
+    "line": 24.5,
+    "predicted": 30.5,
+    "pick": "OVER",
+    "confidence": 75,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
+  },
+  {
+    "player": "Caleb Love",
+    "line": 14.5,
+    "predicted": 17.2,
+    "pick": "OVER",
+    "confidence": 65,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
+  },
+  {
+    "player": "Jusuf Nurki\u0107",
+    "line": 13.5,
+    "predicted": 17.3,
+    "pick": "OVER",
+    "confidence": 68,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
+  },
+  {
+    "player": "Toumani Camara",
+    "line": 13.5,
+    "predicted": 13.6,
+    "pick": "OVER",
+    "confidence": 51,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
+  },
+  {
+    "player": "Donovan Clingan",
+    "line": 12.5,
+    "predicted": 15.2,
+    "pick": "OVER",
+    "confidence": 64,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
+  },
+  {
+    "player": "Ace Bailey",
+    "line": 10.5,
+    "predicted": 10.4,
+    "pick": "UNDER",
+    "confidence": 50,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
+  },
+  {
+    "player": "Svi Mykhailiuk",
+    "line": 7.5,
+    "predicted": 6.8,
+    "pick": "UNDER",
+    "confidence": 55,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
   },
   {
     "player": "Kawhi Leonard",
     "line": 28.5,
-    "predicted": 38.8,
+    "predicted": 38.9,
     "pick": "OVER",
-    "confidence": 78
+    "confidence": 79,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
   },
   {
     "player": "Stephen Curry",
     "line": 27.5,
-    "predicted": 27.2,
-    "pick": "UNDER",
-    "confidence": 52
+    "predicted": 35.7,
+    "pick": "OVER",
+    "confidence": 80,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
   },
   {
     "player": "James Harden",
-    "line": 24.5,
-    "predicted": 24.2,
-    "pick": "UNDER",
-    "confidence": 52
+    "line": 23.5,
+    "predicted": 24.0,
+    "pick": "OVER",
+    "confidence": 52,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
   },
   {
     "player": "John Collins",
     "line": 11.5,
-    "predicted": 12.8,
+    "predicted": 12.7,
     "pick": "OVER",
-    "confidence": 59
+    "confidence": 57,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
   },
   {
     "player": "Ivica Zubac",
     "line": 11.5,
-    "predicted": 15.5,
+    "predicted": 21.0,
     "pick": "OVER",
-    "confidence": 63
+    "confidence": 80,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
   },
   {
     "player": "Brandin Podziemski",
-    "line": 9.5,
-    "predicted": 11.4,
+    "line": 10.5,
+    "predicted": 11.3,
     "pick": "OVER",
-    "confidence": 64
+    "confidence": 55,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
   },
   {
     "player": "De'Anthony Melton",
     "line": 8.5,
-    "predicted": 9.3,
+    "predicted": 10.9,
     "pick": "OVER",
-    "confidence": 57
+    "confidence": 66,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
   },
   {
     "player": "Moses Moody",
     "line": 8.5,
-    "predicted": 7.3,
+    "predicted": 7.6,
     "pick": "UNDER",
-    "confidence": 62
+    "confidence": 56,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
+  },
+  {
+    "player": "Draymond Green",
+    "line": 7.5,
+    "predicted": 11.2,
+    "pick": "OVER",
+    "confidence": 71,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
   },
   {
     "player": "Quinten Post",
     "line": 7.5,
-    "predicted": 8.0,
+    "predicted": 9.1,
     "pick": "OVER",
-    "confidence": 55
+    "confidence": 61,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
   },
   {
     "player": "Kris Dunn",
     "line": 7.5,
-    "predicted": 6.3,
+    "predicted": 5.9,
     "pick": "UNDER",
-    "confidence": 64
+    "confidence": 62,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
   },
   {
-    "player": "Draymond Green",
-    "line": 6.5,
-    "predicted": 10.9,
+    "player": "Brook Lopez",
+    "line": 7.5,
+    "predicted": 11.8,
     "pick": "OVER",
-    "confidence": 77
+    "confidence": 66,
+    "game_time": "2026-01-05T22:00:00.000-05:00"
   }
 ]

@@ -1,4 +1,5 @@
 # predict.py
+from math import sqrt
 import os
 import pandas as pd
 import joblib
@@ -18,6 +19,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODEL_PATH = os.path.join(BASE_DIR, "model", "nba_points_model.pkl")
 CACHE_DIR = os.path.join(BASE_DIR, "data", "player_cache")
 OUTPUT_PATH = os.path.join(BASE_DIR, "public", "picks.json")
+META_PATH = os.path.join(BASE_DIR, "model", "model_meta.json")
 
 os.makedirs(CACHE_DIR, exist_ok=True)
 os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
@@ -94,75 +96,82 @@ def get_prizepicks():
     
     params = {
         "league_id": 7,   # NBA
-        "per_page": 250   # returns full slate
+        "per_page": 250
     }
 
     r = requests.get(url, params=params)
-
     if r.status_code != 200:
         print("❌ PrizePicks API Error", r.text)
         return []
 
     json_data = r.json()
-
     projections = json_data["data"]
     included = json_data["included"]
 
-    # Build player lookup
+    # Lookups
     player_lookup = {}
+    game_lookup = {}
+
     for item in included:
         if item["type"] == "new_player":
             player_lookup[item["id"]] = item["attributes"]["name"]
 
+        if item["type"] == "game":
+            game_lookup[item["id"]] = {
+                "start_time": item["attributes"].get("start_time"),
+                "home_team": item["attributes"].get("home_team_abbreviation"),
+                "away_team": item["attributes"].get("away_team_abbreviation"),
+            }
+
     props = []
 
-    # Get the props
     for proj in projections:
         attr = proj["attributes"]
 
-        stat = (attr.get("stat_type") or attr.get("display_stat") or "").lower()
-
-        if stat not in ("points",):
+        stat = (attr.get("stat_type") or "").lower()
+        if stat != "points":
             continue
-        
-        player_id = attr.get("new_player_id")
 
-        # MAIN BOARD FILTER (this is the key)
         if attr.get("odds_type") != "standard":
             continue
 
         if attr.get("adjusted_odds") is not None:
             continue
 
+        player_id = attr.get("new_player_id")
         if not player_id:
             rel = proj.get("relationships", {})
-            new_player = rel.get("new_player", {}).get("data", {})
-            player_id = new_player.get("id")
+            player_id = rel.get("new_player", {}).get("data", {}).get("id")
 
         if not player_id:
-            print("⚠️ Missing player ID for projection, skipping")
             continue
 
-        
-        player_name = player_lookup.get(str(player_id), "Unknown Player")
-        display = (
-            attr.get("display_stat")
-            or attr.get("stat_type")
-            or attr.get("label")
-            or "unknown"
-        )
+        player_name = player_lookup.get(str(player_id))
+        if not player_name:
+            continue
+
+        # Game relationship
+        rel = proj.get("relationships", {})
+        game_id = rel.get("game", {}).get("data", {}).get("id")
+        game = game_lookup.get(game_id, {})
+
+        player_team = attr.get("team")
+        home = game.get("home_team")
+        away = game.get("away_team")
+
+        opponent = None
+        if player_team and home and away:
+            opponent = away if player_team == home else home
+
         props.append({
             "player": player_name,
             "line": attr["line_score"],
-            "stat": attr["stat_type"],       # "points", "rebounds", etc.
-            "display": display, # "PTS", "REB"
-            "team": attr.get("team", None),
-            "id": proj["id"]
+            "team": player_team,
+            "opponent": opponent,
+            "game_time": game.get("start_time"),
         })
-        
 
     print(f"✅ Loaded {len(props)} PrizePicks props")
-        
     return props
 
 
@@ -195,7 +204,21 @@ def make_predictions(model, props):
         pred = model.predict(X)[0]
         diff = pred - line
 
-        z = diff / max(latest["pts_std_5"], 1.0)
+        # Calculate Confidence Level
+        with open(META_PATH) as f:
+            meta = json.load(f)
+
+        model_mae = meta["mae"]
+
+        std = max(
+            0.7 * latest["pts_std_5"] +
+            0.3 * df["PTS"].std(),
+            3.0
+        )
+        effective_std = sqrt(std**2 + model_mae**2)
+
+        z = diff / max(effective_std, 1.0)
+
         prob_over = norm.cdf(z)
 
         pick = "OVER" if prob_over >= 0.5 else "UNDER"
@@ -204,16 +227,17 @@ def make_predictions(model, props):
         if pick == "UNDER":
             confidence = 100 - confidence
         
-        # Make sure confidence is not 100
-        if(confidence == 100):
-            confidence = 99
+        # Make sure confidence is not more than 80
+        confidence = min(confidence, 80)
 
+        # Append to picks
         picks.append({
             "player": name,
             "line": line,
             "predicted": round(pred, 1),
             "pick": pick,
             "confidence": confidence,
+            "game_time": prop.get("game_time"),
         })
 
     return picks

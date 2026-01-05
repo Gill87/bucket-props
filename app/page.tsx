@@ -8,6 +8,21 @@ type Pick = {
   predicted: number;
   pick: "OVER" | "UNDER";
   confidence: number;
+  game_time?: string;
+};
+
+const formatGameTime = (iso?: string) => {
+  if (!iso) return "";
+
+  const date = new Date(iso);
+
+  const datePart = date.toLocaleDateString(undefined, {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+  });
+
+  return `${datePart}`;
 };
 
 export default function Home() {
@@ -27,25 +42,29 @@ export default function Home() {
           <h1 style={styles.title}>BucketProps</h1>
           <p style={styles.subtitle}>Data-driven ML predictions</p>
         </div>
-        <span style={styles.liveBadge}>● Live Picks</span>
+        <span style={styles.liveBadge}>● Live Picks</span>      
       </header>
 
       {/* Cards Grid */}
       <section style={styles.grid}>
-        {picks.map((p, i) => {
+          {[...picks]
+            .sort((a, b) => b.confidence - a.confidence)
+            .map((p, i) => {          
           const isOver = p.pick === "OVER";
-
           return (
             <div key={i} style={styles.card}>
               {/* Top row */}
               <div style={styles.cardTop}>
                 <span style={styles.confidenceBadge(p.confidence)}>
-                  {p.confidence}%
+                  {p.confidence}% Confidence
                 </span>
               </div>
 
               {/* Player */}
               <h2 style={styles.player}>{p.player}</h2>
+
+              {/* Date & Time*/}
+              <p style={styles.gameTime}>{formatGameTime(p.game_time)}</p>
 
               {/* Line vs Projection */}
               <div style={styles.stats}>
@@ -113,6 +132,12 @@ const styles: any = {
     padding: "0.4rem 0.75rem",
     borderRadius: "999px",
     fontSize: "0.85rem",
+  },
+
+  gameTime: {
+    fontSize: "0.85rem",
+    color: "#8fa3c8",
+    marginTop: "0.15rem",
   },
 
   grid: {

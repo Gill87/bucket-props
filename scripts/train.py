@@ -2,6 +2,8 @@
 import os
 import pandas as pd
 import joblib
+from datetime import datetime, timezone
+import json
 
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.metrics import mean_absolute_error
@@ -127,6 +129,25 @@ def train():
 
     joblib.dump(model, f"{MODEL_DIR}/nba_points_model.pkl")
     print("💾 Model saved")
+
+    # Save metadata
+    meta = {
+        "mae": float(mae),
+        "model_type": "GradientBoostingRegressor",
+        "n_estimators": 200,
+        "learning_rate": 0.08,
+        "max_depth": 3,
+        "features": FEATURES,
+        "train_seasons": TRAINING_SEASONS,
+        "train_size": len(X_train),
+        "test_size": len(X_test),
+        "trained_at": datetime.now(timezone.utc).isoformat()
+    }
+
+    with open(f"{MODEL_DIR}/model_meta.json", "w") as f:
+        json.dump(meta, f, indent=2)
+
+    print("💾 Model + metadata saved")
 
 
 if __name__ == "__main__":

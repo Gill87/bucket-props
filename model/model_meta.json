@@ -1,0 +1,30 @@
+{
+  "mae": 3.653935274772803,
+  "model_type": "GradientBoostingRegressor",
+  "n_estimators": 200,
+  "learning_rate": 0.08,
+  "max_depth": 3,
+  "features": [
+    "pts_last5",
+    "pts_last10",
+    "pts_std_5",
+    "season_pts_avg",
+    "min_last5",
+    "min_last10",
+    "minutes_trend",
+    "fga_last5",
+    "fga_last10",
+    "fga_trend",
+    "home_flag",
+    "rest_days",
+    "back_to_back"
+  ],
+  "train_seasons": [
+    "2025-26",
+    "2024-25",
+    "2023-24"
+  ],
+  "train_size": 1432,
+  "test_size": 359,
+  "trained_at": "2026-01-05T05:40:05.061597+00:00"
+}
