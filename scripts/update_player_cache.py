@@ -4,13 +4,14 @@ import time
 import pandas as pd
 from nba_api.stats.static import players
 from nba_api.stats.endpoints import playergamelog
-from nba_api.library.http import NBAStatsHTTP
+import nba_api.library.http as http
 import requests
 import random
 
-# NBA API HARDENING (CRITICAL)
 # ===============================
-NBAStatsHTTP.headers = {
+# NBA API HARDENING (COMPATIBLE)
+# ===============================
+http.DEFAULT_HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -24,8 +25,7 @@ NBAStatsHTTP.headers = {
 }
 
 # Use ONE persistent session (huge)
-session = requests.Session()
-NBAStatsHTTP._session = session
+http._session = requests.Session()
 
 # ===============================
 # Config
