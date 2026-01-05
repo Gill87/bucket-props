@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+---
 
-## Getting Started
+# 🏀 BucketProps
 
-First, run the development server:
+**BucketProps** is a data-driven NBA player props platform that uses machine learning to generate **over/under point predictions** for daily games.
+The goal is simple: turn historical NBA data into clear, confidence-weighted insights — no hype, just numbers.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 What BucketProps Does
+
+* 📊 Predicts **NBA player points** using machine learning
+* 🎯 Outputs **Over / Under picks** with confidence scores
+* 🔄 Updates player data continuously via cached NBA stats
+* 🧠 Separates **data updates** from **model retraining** for efficiency
+* 🌐 Displays picks in a clean **Next.js frontend**
+
+---
+
+## 🧠 How It Works
+
+### 1. Data Collection
+
+* Historical NBA player game logs
+* Vegas lines from prop platforms (e.g. PrizePicks-style props)
+* Player-level stats cached locally to avoid repeated API hits
+
+### 2. Feature Engineering
+
+Features include (but aren’t limited to):
+
+* Rolling & expanding averages
+* Recent game performance trends
+* Usage-based indicators
+* Opponent-adjusted context (where available)
+
+### 3. Model Training
+
+* Machine learning model trained across **multiple seasons**
+* Designed to generalize across players, not overfit to single games
+* Retrained periodically (not daily) to stay aligned with league trends
+
+### 4. Prediction Output
+
+Each pick includes:
+
+* Player name
+* Vegas line
+* Model-predicted points
+* Over / Under recommendation
+* Confidence score
+
+---
+
+## 🖥️ Tech Stack
+
+### Backend / ML
+
+* **Python**
+* **pandas**, **NumPy**
+* **scikit-learn**
+* NBA stats APIs
+* Local player cache system
+
+### Frontend
+
+* **Next.js**
+* **React**
+* Client-side data fetching from `picks.json`
+* Simple, fast, and mobile-friendly UI
+
+---
+
+## 📁 Project Structure (Simplified)
+
+```
+bucketprops/
+│
+├── scripts/
+│   ├── update_player_cache.py
+│   ├── train_model.py
+│   └── predict.py
+│
+├── data/
+│   ├── player_cache/
+│   ├── training/
+│   └── picks.json
+│
+├── model/
+│   └── .pkl file
+│   └── metadata
+|
+├── frontend/
+│   └── Next.js app
+│
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔁 Model Update Strategy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Player stats** → updated frequently (daily or near-daily)
+* **Model retraining** → done periodically (e.g. bi-weekly)
+* This avoids noise from single games while keeping predictions relevant
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ⚠️ Disclaimer
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+BucketProps is for **educational and informational purposes only**.
+Predictions are not guarantees. No financial or betting advice is provided.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📈 Roadmap
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* [ ] Add opponent & game-time context
+* [ ] Support additional stat categories (REB, AST, PRA)
+* [ ] Confidence-based pick sorting
+* [ ] Cloud-based automation (CI + scheduled updates)
+* [ ] Public API access
+* [ ] SaaS-style dashboard
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 👤 Author
+
+Built by **Guritfak Gill**
+Computer Science student at UC Davis & ML-focused software engineer
+Passionate about sports analytics, data systems, and clean UI
+
+---
