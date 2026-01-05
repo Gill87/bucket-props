@@ -9,6 +9,7 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+.venv/
 
 # testing
 /coverage
@@ -35,6 +36,9 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# model
+model/*.pkl
 
 # typescript
 *.tsbuildinfo

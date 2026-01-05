@@ -1,0 +1,42 @@
+name: Daily Player Cache + Picks
+
+on:
+  schedule:
+    - cron: "0 14 * * *"   # 7 AM PST (UTC)
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Update player cache
+        run: python scripts/update_player_cache.py
+
+      - name: Run predictions
+        run: python scripts/predict.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "bucketprops-bot"
+          git config user.email "bot@bucketprops.ai"
+          git add data/player_cache public/picks.json
+          git commit -m "Daily cache + picks update" || echo "No changes"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
