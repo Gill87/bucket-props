@@ -1,11 +1,11 @@
----
-
 # 🏀 BucketProps
 
 **BucketProps** is a data-driven NBA player props platform that uses machine learning to generate **over/under point predictions** for daily games.
 The goal is simple: turn historical NBA data into clear, confidence-weighted insights — no hype, just numbers.
 
 ---
+
+<img width="2452" height="868" alt="Screenshot 2026-01-04 215528" src="https://github.com/user-attachments/assets/60edfc83-5f0d-43e9-ac5d-96800482bb6f" />
 
 ## 🚀 What BucketProps Does
 
@@ -39,6 +39,7 @@ Features include (but aren’t limited to):
 * Machine learning model trained across **multiple seasons**
 * Designed to generalize across players, not overfit to single games
 * Retrained periodically (not daily) to stay aligned with league trends
+* Utilizes **Gradient Boosting Regression** to make accurate predictions
 
 ### 4. Prediction Output
 
