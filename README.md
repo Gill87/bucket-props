@@ -114,17 +114,6 @@ Predictions are not guarantees. No financial or betting advice is provided.
 
 ---
 
-## 📈 Roadmap
-
-* [ ] Add opponent & game-time context
-* [ ] Support additional stat categories (REB, AST, PRA)
-* [ ] Confidence-based pick sorting
-* [ ] Cloud-based automation (CI + scheduled updates)
-* [ ] Public API access
-* [ ] SaaS-style dashboard
-
----
-
 ## 👤 Author
 
 Built by **Guritfak Gill**
