@@ -27,7 +27,8 @@ def fetch_player_games(player_id):
     df = playergamelog.PlayerGameLog(
         player_id=player_id,
         season=SEASON,
-        season_type_all_star="Regular Season"
+        season_type_all_star="Regular Season",
+        timeout=30,
     ).get_data_frames()[0]
 
     df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"])
@@ -35,6 +36,7 @@ def fetch_player_games(player_id):
 
 
 def update_player_cache(player_name):
+    print(f"➡️ Fetching {player_name}", flush=True)
     player_id = PLAYER_LOOKUP.get(player_name)
     if not player_id:
         print(f"⚠️ Could not find NBA ID for {player_name}, skipping")
