@@ -183,7 +183,7 @@ def make_predictions(model, props):
         df = load_or_fetch_player_games(player_id, name)
         if df is None or df.empty:
             continue
-        time.sleep(0.7)
+        time.sleep(1)
 
         df = engineer_features(df)
         if df.empty:
