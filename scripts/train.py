@@ -19,12 +19,12 @@ DATA_DIR = os.path.join(BASE_DIR, "data", "training")
 os.makedirs(MODEL_DIR, exist_ok=True)
 os.makedirs(DATA_DIR, exist_ok=True)
 
-TRAINING_SEASONS = ["2025-26", "2024-25"]
+TRAINING_SEASONS = ["2025-26", "2024-25", "2023-24"]
 
 # ===============================
 # Data Collection
 # ===============================
-def get_active_players(limit=20):
+def get_active_players(limit=50):
     players = commonallplayers.CommonAllPlayers(is_only_current_season=0).get_data_frames()[0]
     players = players[players["ROSTERSTATUS"] == 1]
     players = players.sample(frac=1, random_state=42)     # random selection of players
