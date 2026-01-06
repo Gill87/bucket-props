@@ -116,8 +116,8 @@ Predictions are not guarantees. No financial or betting advice is provided.
 
 ## 👤 Author
 
-Built by **Guritfak Gill**
-Computer Science student at UC Davis & ML-focused software engineer
-Passionate about sports analytics, data systems, and clean UI
+* Built by **Guritfak Gill**
+* Computer Science student at UC Davis & ML-focused software engineer,
+* Passionate about sports analytics, data systems, and machine learning models
 
 ---
